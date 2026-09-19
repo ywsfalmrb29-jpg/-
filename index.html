@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Academy | أكاديمية الأمن السيبراني</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Matrix Canvas Background -->
+    <canvas id="matrix"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="bracket">&lt;</span>
+            CYBER<span class="accent">_ACADEMY</span>
+            <span class="bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#roadmap">المسار</a></li>
+            <li><a href="#courses">الكورسات</a></li>
+            <li><a href="#languages">اللغات</a></li>
+            <li><a href="#tools">الأدوات</a></li>
+            <li><a href="#resources">مصادر</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="terminal-line">&gt; initializing_secure_connection...</p>
+            <h1 class="glitch" data-text="CYBER ACADEMY">CYBER ACADEMY</h1>
+            <p class="subtitle">
+                <span id="typed"></span><span class="cursor">_</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#roadmap" class="btn btn-primary">ابدأ الرحلة 🚀</a>
+                <a href="#courses" class="btn btn-outline">استكشف الكورسات</a>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span>+
+                    <p>كورس</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="120">0</span>+
+                    <p>أداة</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span>+
+                    <p>مسار تعلم</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1000">0</span>+
+                    <p>متعلم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section">
+        <h2 class="section-title"><span class="accent">//</span> مسار التعلم</h2>
+        <p class="section-subtitle">من الصفر إلى الاحتراف في الأمن السيبراني</p>
+        
+        <div class="roadmap-grid">
+            <div class="roadmap-card" data-level="مبتدئ">
+                <div class="card-icon">🌱</div>
+                <h3>الأساسيات</h3>
+                <ul>
+                    <li>أساسيات الشبكات (Network+)</li>
+                    <li>أنظمة التشغيل Linux / Windows</li>
+                    <li>مفاهيم الأمن السيبراني</li>
+                    <li>Python للـ Scripting</li>
+                </ul>
+                <span class="badge">1-3 شهور</span>
+            </div>
+
+            <div class="roadmap-card" data-level="متوسط">
+                <div class="card-icon">⚡</div>
+                <h3>الاختراق الأخلاقي</h3>
+                <ul>
+                    <li>Reconnaissance & OSINT</li>
+                    <li>Scanning & Enumeration</li>
+                    <li>Vulnerability Assessment</li>
+                    <li>Web App Pentesting</li>
+                </ul>
+                <span class="badge">4-6 شهور</span>
+            </div>
+
+            <div class="roadmap-card" data-level="متقدم">
+                <div class="card-icon">🔥</div>
+                <h3>الاحتراف</h3>
+                <ul>
+                    <li>Exploit Development</li>
+                    <li>Reverse Engineering</li>
+                    <li>Malware Analysis</li>
+                    <li>Red Team Operations</li>
+                </ul>
+                <span class="badge">6-12 شهر</span>
+            </div>
+
+            <div class="roadmap-card" data-level="تخصص">
+                <div class="card-icon">🛡️</div>
+                <h3>الدفاع (Blue Team)</h3>
+                <ul>
+                    <li>SOC Analyst</li>
+                    <li>Incident Response</li>
+                    <li>Threat Hunting</li>
+                    <li>Digital Forensics</li>
+                </ul>
+                <span class="badge">تخصص</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <h2 class="section-title"><span class="accent">//</span> الكورسات</h2>
+        <p class="section-subtitle">أقوى الكورسات العربية والأجنبية المجانية</p>
+
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-header">
+                    <span class="course-tag">مجاني</span>
+                    <span class="course-lang">عربي</span>
+                </div>
+                <h3>أساسيات الأمن السيبراني</h3>
+                <p>ابدأ من الصفر وتعلم المفاهيم الأساسية للأمن السيبراني.</p>
+                <div class="course-footer">
+                    <span>⏱ 12 ساعة</span>
+                    <a href="#" class="course-link">ابدأ ←</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <span class="course-tag">مجاني</span>
+                    <span class="course-lang">English</span>
+                </div>
+                <h3>Network Fundamentals</h3>
+                <p>تعلم أساسيات الشبكات من Cisco Networking Academy.</p>
+                <div class="course-footer">
+                    <span>⏱ 20 ساعة</span>
+                    <a href="#" class="course-link">ابدأ ←</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <span class="course-tag premium">مدفوع</span>
+                    <span class="course-lang">English</span>
+                </div>
+                <h3>OSCP Preparation</h3>
+                <p>تحضير كامل لشهادة OSCP مع تمارين عملية.</p>
+                <div class="course-footer">
+                    <span>⏱ 80 ساعة</span>
+                    <a href="#" class="course-link">ابدأ ←</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <span class="course-tag">مجاني</span>
+                    <span class="course-lang">عربي</span>
+                </div>
+                <h3>Linux للمخترقين</h3>
+                <p>تعلم Linux من الصفر للأمن السيبراني.</p>
+                <div class="course-footer">
+                    <span>⏱ 15 ساعة</span>
+                    <a href="#" class="course-link">ابدأ ←</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <span class="course-tag">مجاني</span>
+                    <span class="course-lang">عربي</span>
+                </div>
+                <h3>Python للـ Pentesting</h3>
+                <p>بناء أدوات اختراق أخلاقي بـ Python.</p>
+                <div class="course-footer">
+                    <span>⏱ 25 ساعة</span>
+                    <a href="#" class="course-link">ابدأ ←</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <span class="course-tag">مجاني</span>
+                    <span class="course-lang">English</span>
+                </div>
+                <h3>Web App Hacking</h3>
+                <p>تعلم اختبار اختراق تطبيقات الويب.</p>
+                <div class="course-footer">
+                    <span>⏱ 30 ساعة</span>
+                    <a href="#" class="course-link">ابدأ ←</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section">
+        <h2 class="section-title"><span class="accent">//</span> لغات البرمجة</h2>
+        <p class="section-subtitle">اللغات اللي محتاجها كمحترف أمن سيبراني</p>
+
+        <div class="languages-grid">
+            <div class="lang-card">
+                <div class="lang-name">Python</div>
+                <div class="lang-bar"><div class="lang-fill" style="width:95%">95%</div></div>
+                <p>اللغة الأولى في الأمن السيبراني — Scripting & Automation</p>
+            </div>
+            <div class="lang-card">
+                <div class="lang-name">Bash</div>
+                <div class="lang-bar"><div class="lang-fill" style="width:90%">90%</div></div>
+                <p>أساسيات Linux Scripting — ضرورية للـ Pentesting</p>
+            </div>
+            <div class="lang-card">
+                <div class="lang-name">JavaScript</div>
+                <div class="lang-bar"><div class="lang-fill" style="width:80%">80%</div></div>
+                <p>تحليل الويب و XSS و Client-side Attacks</p>
+            </div>
+            <div class="lang-card">
+                <div class="lang-name">C / C++</div>
+                <div class="lang-bar"><div class="lang-fill" style="width:75%">75%</div></div>
+                <p>Reverse Engineering & Exploit Development</p>
+            </div>
+            <div class="lang-card">
+                <div class="lang-name">SQL</div>
+                <div class="lang-bar"><div class="lang-fill" style="width:85%">85%</div></div>
+                <p>Database Attacks & SQL Injection</p>
+            </div>
+            <div class="lang-card">
+                <div class="lang-name">PowerShell</div>
+                <div class="lang-bar"><div class="lang-fill" style="width:70%">70%</div></div>
+                <p>Windows Pentesting & Red Team</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section">
+        <h2 class="section-title"><span class="accent">//</span> الأدوات الأساسية</h2>
+        <p class="section-subtitle">الأدوات اللي لازم تتقنها</p>
+
+        <div class="tools-grid">
+            <div class="tool-card"><span>🔍</span><h4>Nmap</h4><p>Network Scanning</p></div>
+            <div class="tool-card"><span>💥</span><h4>Metasploit</h4><p>Exploitation</p></div>
+            <div class="tool-card"><span>🕷️</span><h4>Burp Suite</h4><p>Web Pentesting</p></div>
+            <div class="tool-card"><span>🐉</span><h4>Kali Linux</h4><p>Pentesting OS</p></div>
+            <div class="tool-card"><span>📡</span><h4>Wireshark</h4><p>Packet Analysis</p></div>
+            <div class="tool-card"><span>🔐</span><h4>Hashcat</h4><p>Password Cracking</p></div>
+            <div class="tool-card"><span>🌐</span><h4>OWASP ZAP</h4><p>Web Security</p></div>
+            <div class="tool-card"><span>🧬</span><h4>Ghidra</h4><p>Reverse Engineering</p></div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section">
+        <h2 class="section-title"><span class="accent">//</span> مصادر مجانية</h2>
+        <p class="section-subtitle">منصات تعلم و تدريب عملية</p>
+
+        <div class="resources-grid">
+            <a href="https://tryhackme.com" target="_blank" class="resource-card">
+                <h3>TryHackMe</h3>
+                <p>تعلم عملي تفاعلي من الصفر</p>
+            </a>
+            <a href="https://hackthebox.com" target="_blank" class="resource-card">
+                <h3>Hack The Box</h3>
+                <p>تحديات اختراق واقعية</p>
+            </a>
+            <a href="https://portswigger.net/web-security" target="_blank" class="resource-card">
+                <h3>PortSwigger Academy</h3>
+                <p>تعلم Web Security مجاناً</p>
+            </a>
+            <a href="https://www.cybrary.it" target="_blank" class="resource-card">
+                <h3>Cybrary</h3>
+                <p>كورسات أمن سيبراني مجانية</p>
+            </a>
+            <a href="https://overthewire.org" target="_blank" class="resource-card">
+                <h3>OverTheWire</h3>
+                <p>تحديات Linux و Security</p>
+            </a>
+            <a href="https://picoctf.org" target="_blank" class="resource-card">
+                <h3>PicoCTF</h3>
+                <p>تحديات CTF للمبتدئين</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="terminal-line">&gt; connection_secured ✓</p>
+        <p>© 2024 Cyber Academy — صُنع بـ <span class="heart">💚</span> للمجتمع العربي</p>
+        <p class="disclaimer">⚠️ كل المحتوى تعليمي و أخلاقي فقط</p>
+    </footer>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
